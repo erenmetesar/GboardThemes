@@ -1,0 +1,18 @@
+ERROR:root:Command failed
+Traceback (most recent call last):
+  File "/app/friendly-telegram/main.py", line 129, in handle_command
+    await coro
+  File "https://raw.githubusercontent.com/rebel6969/Modules/master/song.py", line 31, in _
+    loa = lol[0]
+IndexError: list index out of range
+ERROR:telethon.client.updates:Unhandled exception on functools.partial(<function handle_command at 0x7f300e520560>, <friendly-telegram.loader.Modules object at 0x7f30054c9690>, <friendly-telegram.database.frontend.Database object at 0x7f30054f82d0>)
+Traceback (most recent call last):
+  File "/app/.heroku/python/lib/python3.7/site-packages/telethon/client/updates.py", line 422, in _dispatch_update
+    await callback(event)
+  File "/app/friendly-telegram/main.py", line 137, in handle_command
+    raise e
+  File "/app/friendly-telegram/main.py", line 129, in handle_command
+    await coro
+  File "https://raw.githubusercontent.com/rebel6969/Modules/master/song.py", line 31, in _
+    loa = lol[0]
+IndexError: list index out of range
